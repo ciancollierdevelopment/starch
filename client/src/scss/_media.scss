@@ -1,0 +1,15 @@
+// Mixins For Media Queries
+
+// Large Devices
+@mixin screenSizeLg {
+  @media screen and (min-width: 700px) {
+    @content;
+  }
+}
+
+// Phones
+@mixin screenSizeSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}

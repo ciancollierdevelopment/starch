@@ -1,0 +1,43 @@
+// Styles For Signup Form
+@import 'switcher';
+
+@mixin signup {
+  .signup-form-container {
+    width: 20rem;
+    padding: 1rem;
+    min-height: 100vh;
+
+    label {
+      color: #fff;
+      margin-top: 1rem;
+    }
+
+    input {
+      background-color: rgba(#fff, 0);
+
+      &:focus {
+        background-color: rgba(#fff, 0);
+      }
+    }
+
+    button {
+
+    }
+
+    p {
+      color: #aaa;
+      font-size: 0.8rem;
+      margin-top: 0.7rem;
+
+      a {
+        color: #d9534f;
+      }
+    }
+  }
+
+  .hidden-labcode {
+    display: none;
+  }
+
+  @include switcher;
+}

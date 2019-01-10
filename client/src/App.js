@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/landing.css';
+import NavBar from './components/NavBar.jsx';
+import Login from './components/Login.jsx';
+import Signup from './components/Signup.jsx';
 
 class App extends Component {
+  state = {
+    loginOpen: false
+  }
+
+  loginOpenHandler = () => {
+    this.setState({
+      loginOpen: !this.state.loginOpen
+    });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <React.Fragment>
+        <NavBar loginOpenHandler={this.loginOpenHandler} />
+        <div className="row">
+        <div className="container col-sm-12">
+          <div className="about">
+
+          </div>
+          <div className="signup">
+            <Login isOpen={this.state.loginOpen} />
+            <Signup />
+          </div>
+        </div>
+        </div>
+      </React.Fragment>
     );
   }
 }

@@ -1,0 +1,47 @@
+// Styles For Login Form
+@import 'media';
+$login-background: #555555;
+
+@mixin login {
+  nav {
+    z-index: 100;
+  }
+
+  #login {
+    width: 100%;
+    position: absolute;
+    width: 20rem;
+    background-color: $login-background;
+    transform: translate3d(0, -100%, 0);
+    transition: all 1s ease-out;
+    visibility: hidden;
+    padding: 1rem;
+    z-index: 99;
+
+    input {
+      margin-top: 0.5rem;
+      background-color: $login-background;
+      color: #fff;
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    button {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+  }
+
+  @include screenSizeSm {
+    #login {
+      width: 100vw;
+    }
+  }
+}
