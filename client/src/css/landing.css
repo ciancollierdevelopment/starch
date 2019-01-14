@@ -92,7 +92,7 @@ nav {
       color: #d9534f; }
 
 .hidden-labcode {
-  display: none; }
+  display: none !important; }
 
 .switcher {
   width: 100%;
@@ -117,3 +117,10 @@ nav {
 
 .selected {
   background-color: #d9534f; }
+
+.hidden {
+  display: none; }
+
+@media screen and (max-width: 500px) {
+  .signup-form-container {
+    margin: auto; } }

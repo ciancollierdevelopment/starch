@@ -12,7 +12,7 @@ class Signup extends Component {
   }
 
   render() {
-    let hidden = (this.state.managerOrGroupMember === 2) ? "hidden-labcode" : "";
+    let hidden = (this.state.managerOrGroupMember === 1) ? "hidden-labcode" : "";
 
     return (
       <div className="signup-form-container">

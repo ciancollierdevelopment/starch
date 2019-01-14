@@ -1,5 +1,6 @@
 // Styles For Signup Form
 @import 'switcher';
+@import 'media';
 
 @mixin signup {
   .signup-form-container {
@@ -36,8 +37,14 @@
   }
 
   .hidden-labcode {
-    display: none;
+    display: none !important;
   }
 
   @include switcher;
+
+  @include screenSizeSm {
+    .signup-form-container {
+      margin: auto;
+    }
+  }
 }
