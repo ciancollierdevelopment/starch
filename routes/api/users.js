@@ -10,9 +10,9 @@ router.post('/signup', (req, res) => {
   const {errors, isValid} = validateSignup(req.body);
 
   if (!isValid) {
-    res.status(400).json(errors);
+    res.json(errors);
   } else {
-    res.send("success");
+    res.json({hasErrors: false});
   }
 });
 
