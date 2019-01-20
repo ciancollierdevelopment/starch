@@ -3,6 +3,8 @@
 @import 'media';
 
 @mixin signup {
+  $red-colour: #d9534f;
+
   .signup-form-container {
     width: 20rem;
     padding: 1rem;
@@ -21,7 +23,9 @@
       }
     }
 
-    button {
+    span.error {
+      color: $red-colour;
+      font-size: 0.8rem;
 
     }
 
@@ -31,7 +35,13 @@
       margin-top: 0.7rem;
 
       a {
-        color: #d9534f;
+        color: $red-colour;
+      }
+
+      &.error {
+        color: $red-colour;
+        margin-bottom: 0;
+        font-weight: bold;
       }
     }
   }

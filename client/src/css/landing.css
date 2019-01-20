@@ -86,12 +86,19 @@ nav {
     background-color: rgba(255, 255, 255, 0); }
     .signup-form-container input:focus {
       background-color: rgba(255, 255, 255, 0); }
+  .signup-form-container span.error {
+    color: #d9534f;
+    font-size: 0.8rem; }
   .signup-form-container p {
     color: #aaa;
     font-size: 0.8rem;
     margin-top: 0.7rem; }
     .signup-form-container p a {
       color: #d9534f; }
+    .signup-form-container p.error {
+      color: #d9534f;
+      margin-bottom: 0;
+      font-weight: bold; }
 
 .hidden-labcode {
   display: none !important; }
