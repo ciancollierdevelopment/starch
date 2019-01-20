@@ -38,13 +38,13 @@ class Signup extends Component {
           <div className="row">
             <div className="col-md-12">
               <Label for="password">Password:</Label>
-              <Input type="password" name="password" placeholder="password" />
+              <Input type="password" name="password" placeholder="Password" />
             </div>
           </div>
           <div className="row">
             <div className="col-md-12">
               <Label for="confirmpassword">Confirm Password:</Label>
-              <Input type="password" name="confirmpassword" placeholder="password" />
+              <Input type="password" name="confirmpassword" placeholder="Password" />
             </div>
           </div>
           <div className="row">
@@ -55,7 +55,10 @@ class Signup extends Component {
           </div>
           <p>By signing up for Starch you agree to the <a href="#">Terms and Conditions</a> and
           the <a href="#">Privacy Policy</a>.</p>
-          <Button color="danger" type="submit">Signup Now</Button>
+          <Button color="danger" type="submit" onClick={(event) => {
+            event.preventDefault();
+            alert("Submitted");
+          }}>Signup Now</Button>
         </Form>
       </div>
     );

@@ -22,6 +22,12 @@ body {
   min-height: 100%;
 }
 
+div.signup {
+  background: rgba($primary-colour, 0.9);
+  min-height: 100vh;
+  color: #fff;
+}
+
 @include screenSizeLg {
   div.container {
     display: flex;
@@ -44,10 +50,7 @@ body {
   }
 
   div.signup {
-    background: rgba($primary-colour, 0.9);
-    min-height: 100vh;
     width: 20rem;
-    color: #fff;
   }
 }
 
