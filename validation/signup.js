@@ -52,6 +52,6 @@ module.exports = validateSignup = data => {
 
   return {
     errors,
-    isValid: isEmpty(errors)
+    isValid: !errors.hasErrors
   };
 };

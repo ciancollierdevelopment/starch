@@ -44,6 +44,7 @@ class Signup extends Component {
       labmanager: isLabManager
     })
     .then (response => {
+      console.log(response.data);
       if (response.data.hasErrors) {
         let {name, email, password, confirmpassword, labgroupcode} = response.data;
 
