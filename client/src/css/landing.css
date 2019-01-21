@@ -48,6 +48,12 @@ div.signup {
 nav {
   z-index: 100; }
 
+p.error {
+  color: #d9534f;
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-top: 0.5rem; }
+
 #login {
   width: 100%;
   position: absolute;

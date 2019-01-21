@@ -1,23 +1,8 @@
 import React, {Component} from 'react';
 import {Form, Input, Button, Label} from 'reactstrap';
 import Switcher from './Switcher';
+import ErrorMessage from './ErrorMessage';
 const axios = require('axios');
-
-class ErrorMessage extends Component {
-  constructor (props) {
-    super(props);
-  }
-
-  render () {
-    let to_display = this.props.display ? 'block' : 'none';
-
-    return (
-      <React.Fragment>
-        <p style={{display: to_display}} className="error">{this.props.text}</p>
-      </React.Fragment>
-    )
-  }
-}
 
 class Signup extends Component {
   state = {
